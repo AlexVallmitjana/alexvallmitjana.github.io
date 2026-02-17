@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+     <title>Alex VL</title>  
+     <meta name="author" content="Alex VL">
+     <meta name="description" content="CV">
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="home page">
+     <meta name="google-site-verification" content="1eX4-11vm782afLyIbLnE4d-PtKvFG9O028gIPcLr1U" />
+     <link href="style.css" rel="stylesheet">
+     <link rel="icon" href="imsCV/icon0.png">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+     <style>
+          html,body {text-size-adjust: none; 
+                     -webkit-text-size-adjust: none;
+                     -moz-text-size-adjust: none;
+                     -ms-text-size-adjust: none;}
+          }
+     </style>
+  	<script type="text/javascript">
+  	  var inout=0;
+  	  function detectMob() {
+       	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  			document.getElementById("cos").style.padding = "2.5em .4em .2em .4em";
+  		}else{  
+  			document.getElementById("cos").style.padding = "2.5em 1.5em 1em 1.5em"; 
+  			document.getElementById("cos").style.maxWidth = "686px"; 
+  		}
+  	  logset(0);
+       }
+	      function desplega(id,n) {
+  	      if(inout!=n){
+	          plega();
+	          inout=n;
+	          document.getElementById(id).style.display="block";
+	          }else{plega();}
+	      }
+	      function plega() {
+  	      logset(1);
+	          inout=0;
+	          const kk=document.getElementsByClassName("dropdown-content");		
+           for (let ii = 0; ii < kk.length; ii++) {
+            	 kk[ii].style.display = "none";
+           }
+	      }
+	      function logset(q) {
+	      	      var xhr = new XMLHttpRequest();    
+	      	      if(q==0){
+	      	        xhr.open("post","visits.php", true );
+	      	      }else{
+	      	        xhr.open("post","clicks.php", true );
+	      	      }
+	      	      xhr.send();
+	      }
+  	</script>
+    </head>
+     <body> <!-- onload = "detectMob()"-->
+         <header id="headerbar">
+         <div id="headerin">
+             <div><a href="#Home" onclick="plega()" onmouseenter="desplega('hom',1)">Home</a></div>
+             <div class="dropdown">
+               <a href="#Publications"  onclick="desplega('pub',4)" onmouseenter="desplega('pub',4)">Publications</a>
+               <div class="dropdown-content" id="pub" onmouseleave="plega()" >
+                 <a href="#JA" onclick="plega()" style="margin:.4em 0 .4em 0;">Journal Articles</a>
+                 <a href="#Pt" onclick="plega()" style="margin:.4em 0 .4em 0;">Patents</a>
+                 <a href="#CA" onclick="plega()" style="margin:.4em 0 .4em 0;">Conference Abstracts</a>
+               </div>
+             </div>
+             <div><a href="#Contact" onclick="plega()" onmouseenter="desplega('con',5)">Contact</a></div>
+         </div>
+         </header>        
+ 
+         <div id="cos">
+         <div id="Home" >
+           <div style="display:grid;column-gap: 0em;grid-template-columns:60% 40%;">
+             <div>
+              <h1 style="padding-top:0;">Alexander Vallmitjana Lees</h1>
+              <h3 style="text-align:left;margin:0;padding-top:0;">Associate Project Scientist</h3>
+              <h4 style="text-align:left;margin:0;"><a style="padding:0;margin:0;" href="https://sites.uci.edu/nlom/"  target="_blank">Nonlinear Optical Microscopy Lab</a></h4>
+              <h4 style="text-align:left;margin:0;" ><a style="padding:0;margin:0;" href="https://www.bli.uci.edu/"  target="_blank">Beckman Laser Institute</a></h4>
+              <h4 style="text-align:left;margin:0;" >Irvine, CA</h4>
+             </div>
+             <div style="position:relative;width:100%;display: flex;justify-content: center;align-items: center;padding-top: 4em;">
+              <img src="imsCV/Alex25b.jpg" alt="AlexVL" style="max-height:100%;position:absolute;max-width:100%;border-radius: 50%;border:1px solid black;display: block;" >
+             </div>
+           </div>
+         </div>
+            <div id="Resume">
+                <h1> </h1>
+                  <table>
+                    <tr>
+                      <td style="white-space:nowrap;" >2017</td>
+                      <td><b>Ph.D. in Biomedical Engineering</b></td>
+                      <td style="text-align:right;">Universitat Politècnica de Catalunya</td>
+                      <td style="text-align: center;padding:0;vertical-align:middle;"><img src="imsCV/upc.png" class="logo";></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td colspan="3"  style="padding-bottom:1em;color:gray"><i><a href="https://drive.google.com/file/d/1v_bq7grWUmUCAdA2hjCGN00f29VbFf3R/view?usp=share_link" target="_blank"><span style="font-style:normal;">Thesis:</span> Multiscale Image Analysis of Calcium Dynamics in Cardiac Myocytes</a></i></td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                      <td style="white-space:nowrap;" ></td>
+                      <td colspan="2"><b></b></td>
+                    </tr>
+                    <tr>
+                      <td style="white-space:nowrap;" >2009</td>
+                      <td><b>B.Sc. in Physics</b></td>
+                      <td style="text-align:right;">Universitat de Barcelona</td>
+                      <td style="text-align: center;padding:0;vertical-align:middle;"><img src="imsCV/ub.png" class="logo";></td>
+                    </tr>
+                  </table>
+                  <h2>Research Experience</h2>
+                  <table>
+                    <tr>
+                      <td style="white-space:nowrap;" >2023 - pres.</td>
+                      <td><b>Associate Project Scientist</b></td>
+                      <td style="text-align:right;">Beckman Laser Institute</td>
+                      <td style="text-align: center;padding:0;vertical-align:middle;"><img src="imsCV/bli.png" class="logo";></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td colspan="3"  style="padding-bottom:1em;color:gray"><i><ul><li>Utilizing time-resolved multiphoton microscope FLAME in the context of clinical dermatology.</li><ul class="ul2"><li>Design and development of front-end interface to drive FLAME. </li><li>Demonstrating FLAME capabilities in monitoring treatment (immunotherapy for melanoma and phototherapy for vitiligo). </li><li>Design and development of image processing tools tailored to the needs of the group using FLAME.</li></ul></ul></i></td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                      <td style="white-space:nowrap;" ></td>
+                      <td colspan="2"><b></b></td>
+                    </tr>
+                    <tr>
+                      <td style="white-space:nowrap;" >2021 - 2023</td>
+                      <td><b>R/D Director & Data Scientist</b></td>
+                      <td style="text-align:right;">Arvetas Biosciences</td>
+                      <td style="text-align: center;padding:0;vertical-align:middle;"><img src="imsCV/arvetas1.png" class="logo";></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td colspan="3"  style="padding-bottom:1em;color:gray"><i><ul><li>Developing a multiomics spatial imaging platform:</li><ul class="ul2"><li>Design and creation of a spatialomics image analysis pipeline.</li><li>Adaptation and maintenance of imaging devices.</li><li>Fluorescence probe labeling design.</li></ul><li>Contributing to writing a successful SBIR grant ($400k).</li><li>Interviewing and hiring technical candidates.</li></ul></i></td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                      <td style="white-space:nowrap;" ></td>
+                      <td colspan="2"><b></b></td>
+                    </tr>
+                    <tr>
+                      <td style="white-space:nowrap;" >2021 - 2023</td>
+                      <td><b>Visiting Researcher</b></td>
+                      <td style="text-align:right;">University of California, Irvine</td>
+                      <td style="text-align: center;padding:0;vertical-align:middle;"><img src="imsCV/uci3.png" class="logo";></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td colspan="3"  style="padding-bottom:1em;color:gray"><i><ul><li>Actively engaged in collaborations with the BME and Pharm. Sci. departments.</li><li>Invited speaker in workshops, seminars, and international conferences.</li></ul></i></td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                      <td style="white-space:nowrap;" ></td>
+                      <td colspan="2"><b></b></td>
+                    </tr>
+                    <tr>
+                      <td style="white-space:nowrap;" >2017 - 2021</td>
+                      <td><b>Postdoctoral Scholar</b></td>
+                      <td style="text-align:right;">Laboratory for Fluorescence Dynamics</td>
+                      <td style="text-align: center;padding:0;vertical-align:middle;"><img src="imsCV/lfd.png" class="logo";></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td colspan="3"  style="padding-bottom:1em;color:gray"><i><ul><li>Invented and patented a spatialomics method (WO 2021/102140 A1).</li><li>Built two state-of-the-art microscopes:</li><ul class="ul2"><li>STED microscopy with Orbital Tracking.</li><li>Fluorescence Lifetime Imaging and Spectral Imaging.</li></ul><li>Awarded research funding through Balsells Felowship ($100k).</li></ul></i></td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                      <td style="white-space:nowrap;" ></td>
+                      <td colspan="2"><b></b></td>
+                    </tr>
+                    <tr>
+                      <td style="white-space:nowrap;" >2015 - 2017</td>
+                      <td><b>Software Developer</b></td>
+                      <td style="text-align:right;">1D3A, ERIC Sports</td>
+                      <td style="text-align: center;padding:0;vertical-align:middle;"><img src="imsCV/eric.png" class="logo";></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td colspan="3"  style="padding-bottom:1em;color:gray"><i><ul><li>Created a video tracking algorithm for tennis TV feed.</li></ul></i></td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                      <td style="white-space:nowrap;" >2010 - 2017</td>
+                      <td><b>Doctoral Fellow</b></td>
+                      <td style="text-align:right;">Universitat Politècnica de Catalunya 	</td>
+                      <td style="text-align: center;padding:0;vertical-align:middle;"><img src="imsCV/upc.png" class="logo";></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td colspan="3"  style="padding-bottom:1em;color:gray"><i><ul><li>Designed and patented a set of data analysis tools for Calcium Imaging.</li><li>Led collaborations with 4 renowned international cardiology labs.</li><li>Teaching Assistant in the School of Engineering:</li><ul class="ul2"><li>General Programming (freshman class).</li><li>Industrial Control (junior class).</li></ul><li>Awarded Spanish Government doctoral scholarship ($50k).</li></ul></i></td>
+                    </tr>
+                    <tr>
+                    </tr>
+                  </table>
+             </div>
+             <div id="Publications">
+                 <h1>Publications</h1>
+                   <table style="text-align:center;">
+                   <tr>
+                   <th rowspan="2">Total number of peer reviewed <br> publications and patents</th>
+                   <th>Journal Articles</th>
+                   <th>Patents</th>
+                   <th>Conference Proceedings</th>
+                   </tr>
+                   <tr>
+                   <td>41</td>
+                   <td>2</td>
+                   <td>52</td>
+                   </tr>
+                   </table>
+  	<p align="center"><canvas id="futur" style="width:100%;max-width:400px;"></canvas></p>
+  	<script type="text/javascript">
+  	  Chart.defaults.font.family ='"Helvetica Neue", Helvetica, Arial,sans-serif';
+  	  Chart.defaults.font.size = 11;
+  	  Chart.defaults.font.lineHeight = 1;
+  	    const xValues = [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
+  	    const yValues1 = [1,0,0,3,0,2,3,1,3,1,3,5,7,4,2,6,0];
+  	    const yValues2 = [0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0];
+  	    const yValues3 = [2,1,4,2,3,4,0,5,2,3,7,2,3,2,4,6,2];
+  	  
+  	  new Chart("futur", {
+  	    type: "bar",
+  	    data: {
+  	        labels: xValues,
+  	      datasets: [
+  	        {label:"Journal Articles",data: yValues1,borderWidth: .5,borderColor:"#113",backgroundColor: "#111133",barPercentage: 0.5,yAxisID:"y"},
+  	        {label:"Patent",data: yValues2,borderWidth: .5,borderColor:"#113",backgroundColor: "#866868",barPercentage: 0.5,yAxisID:"y"},
+  	        {label:"Conference Proceedings",data: yValues3,borderWidth: .5,borderColor:"#113",backgroundColor: "#EEEEEE",barPercentage: 0.5,yAxisID:"y"},
+  	      ]
+  	    },
+  	    options: {
+  	      maintainAspectRatio: false,
+  	      plugins: { legend: {display: false,position: "top"}},
+  	      scales: {
+  	        x: {min: 2010, max:2026, stacked: true},
+  	        y: {min: 0, max:14, stacked: true},
+  	        y1: {min: 0, max:780, stacked: true,display: false,position:"right",grid: {drawOnChartArea: false}},
+  	      }
+  	    }
+  	  });
+  	</script>
+                 <h2 id="JA">Journal Articles</h2>
+                   <table>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J1]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J37_Ranjit et al. - 2025 - Label-free human skin imaging enhanced molecular contrast via time-resolved fluorescence and advanced phasor analysis.pdf" target="_blank"><u> Label-free human skin imaging: enhanced molecular contrast via time-resolved fluorescence and advanced phasor analysis.</u> <br>S. Ranjit et al. <i>Commun. Biol.</i>  Dec 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J2]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J36_Torrado et al. - 2025 - Invivo human skin imaging distinguishing cellular and fibrillar components with fluorescence lifetime microscopy.pdf" target="_blank"><u> In vivo human skin imaging: distinguishing cellular and fibrillar components with fluorescence lifetime microscopy.</u> <br>B. Torrado et al. <i>J. Investig. Dermatol.</i>  Nov 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J3]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J35_Georgakoudi et al. - 2025 - Consensus guidelines for cellular label-free optical metabolic imaging ensuring accuracy and reproducibility in metabolic profiling.pdf" target="_blank"><u> Consensus guidelines for cellular label-free optical metabolic imaging: ensuring accuracy and reproducibility in metabolic profiling.</u> <br>I. Georgakoudi et al. <i>Journal of Biomedical Optics</i>  Nov 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J4]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J34_Vallmitjana et al. - 2025 - Label-free multiphoton microscopy of human skin longitudinal studies capturing cell dynamics.pdf" target="_blank"><u> Label-free multiphoton microscopy of human skin: longitudinal studies capturing cell dynamics.</u> <br><b>A. Vallmitjana</b> et al. <i>Biomed. Opt. Express</i>  Sep 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J5]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J33_Vallmitjana et al. - 2025 - GSLab Open-source platform for advanced phasor analysis in fluorescence microscopy.pdf" target="_blank"><u> GSLab: Open-Source Platform for Advanced Phasor Analysis in Fluorescence Microscopy.</u> <br><b>A. Vallmitjana</b> et al. <i>Bioinformatics</i>  Apr 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J6]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J32_Sun et al. - 2025 - Inositol-1-4-5-trisphosphate-receptor-1-gain-of-function-increases-the-risk-for-cardiac-arrhythmias-in-mice.pdf" target="_blank"><u> Inositol 1,4,5-Trisphosphate Receptor 1 Gain-of-Function Increases the Risk for Cardiac Arrhythmias in Mice and Humans.</u> <br>B. Sun et al. <i>Circ.</i>  Mar 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J7]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J31_Driscoll et al.- 2024 - Intradermal Delivery of Calcium Hydroxylapatite With Fractionated Ablation.pdf" target="_blank"><u> Intradermal Delivery of Calcium Hydroxylapatite With Fractionated Ablation.</u> <br>W. Driscoll et al. <i>Lasers Surg Med</i>  Aug 2024.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J8]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> A versatile reporter system to study cell-to-cell and cell-free bovine leukemia virus infection.</u> <br>F. Rammauro et al. <i>bioRxiv</i>  Feb 2024.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J9]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J29_Fazel et al. - 2023 - Building fluorescence lifetime maps photon-by-photon by leveraging spatial correlations.pdf" target="_blank"><u> Building Fluorescence Lifetime Maps Photon-by-Photon by Leveraging Spatial Correlations.</u> <br>M. Fazel et al. <i>ACS Photonics</i>  Sep 2023.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J10]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J28_Ni et al. - 2023 - Increased Ca2+ Transient Underlies RyR2-Related Left Ventricular Noncompaction.pdf" target="_blank"><u> Increased Ca<sup>2+</sup> Transient Underlies RyR2-related Left Ventricular Noncompaction.</u> <br>M. Ni et al. <i>Circ. Res.</i>  Jun 2023.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J11]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J27_Fazel et al. - 2023 - Fluorescence Lifetime, Beating the IRF and interpulse window.pdf" target="_blank"><u> Fluorescence Lifetime: Beating the IRF and interpulse window.</u> <br>M. Fazel et al. <i>Biophys J.</i>  Jan 2023.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J12]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J26_Tarifa et al. - 2023 - Spatial Distribution of Calcium Sparks Determines Their Ability to Induce Afterdepolarizations in Human Atrial Myocytes.pdf" target="_blank"><u> Spatial Distribution of Calcium Sparks Determines Their Ability to Induce Afterdepolarizations in Human Atrial Myocytes.</u> <br>C. Tarifa et al. <i>JACC Basic Transl Sci.</i>  Jan 2023.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J13]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J25_Wei et al. - 2022 - RyR2 Serine-2030 PKA Site Governs Ca2+ Release Termination and Ca2+ Alternans.pdf" target="_blank"><u> RyR2 Serine-2030 PKA Site Governs Ca<sup>2+</sup> Release Termination and Ca<sup>2+</sup> Alternans.</u> <br>J. Wei et al. <i>Circ. Res.</i>  Dec 2022.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J14]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J24_Vallmitjana et al. - 2022 - Phasor-based multi-harmonic unmixing forin-vivohyperspectral imaging.pdf" target="_blank"><u> Phasor-based multi-harmonic unmixing for in-vivo hyperspectral imaging.</u> <br><b>A. Vallmitjana</b> et al. <i>Methods Appl. Fluoresc.</i>  Nov 2022.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J15]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J23_Vallmitjana et al. - 2022 - Multiscale Image Analysis of Calcium Dynamics in Cardiac Myocytes.pdf" target="_blank"><u> Multiscale image analysis of calcium dynamics in cardiac myocytes.</u> <br><b>A. Vallmitjana</b> and R. Benítez. <i>Opt. pura apl.</i>  Jun 2022.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J16]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J22_Morris et al. - 2022 - Visualizing the Mode of Action and Supramolecular Assembly of Teixobactin Analogues in Bacillus subtilis.pdf" target="_blank"><u> Visualizing the Mode of Action and Supramolecular Assembly of Teixobactin Analogues in Bacillus subtilis.</u> <br>M.A. Morris et al. <i>Chem. Sci.</i>  May 2022.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J17]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J21_Vorontsova et al. - 2022 - In vivo macromolecular crowding is differentially modulated by aquaporin 0 in zebrafish lens.pdf" target="_blank"><u> In vivo macromolecular crowding is differentially modulated by Aquaporin 0 in zebrafish lens: insights from a nano-environment sensor and spectral imaging.</u> <br>I. Vorontsova et al. <i>Sci. Adv.</i>  Feb 2022.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J18]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J20_Fazel et al. - 2021 - High Resolution Fluorescence Lifetime Maps from Minimal Photon Counts.pdf" target="_blank"><u> High resolution fluorescence lifetime maps from minimal photon counts.</u> <br>M. Fazel et al. <i>ACS Photonics</i>  Feb 2022.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J19]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J19_Vu et al. - 2022 - Spatial transcriptomics using combinatorial fluorescence spectral and lifetime encoding, imaging and analysis.pdf" target="_blank"><u> Spatial transcriptomics using combinatorial fluorescence spectral and lifetime encoding, imaging and analysis.</u> <br>T.M. Vu et al. <i>Nat. Commun.</i>  Jan 2022.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J20]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J18_Nolla‐Colomer - 2021 - B2‐adrenergic stimulation potentiates spontaneous calcium release by increasing.pdf" target="_blank"><u> Beta2-adrenergic stimulation potentiates spontaneous calcium release by increasing signal mass and co-activation of ryanodine receptor clusters.</u> <br>C. Nolla-Colomer et al. <i>Acta Physiol.</i>  Nov 2021.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J21]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J17_Vallmitjana et al. - 2021 - Phasor-based image segmentation machine learning clustering techniques.pdf" target="_blank"><u> Phasor-based image segmentation: machine learning clustering techniques.</u> <br><b>A. Vallmitjana</b> et al. <i>Biomed. Opt. Express</i>  Jun 2021.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J22]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J16_Wei et al. - 2021 - Ca2+-CaM Dependent Inactivation of RyR2 Underlies Ca2+ Alternans in Intact Heart.pdf" target="_blank"><u> Ca<sup>2+</sup>-CaM Dependent Inactivation of RyR2 Underlies Ca<sup>2+</sup> Alternans in Intact Heart.</u> <br>J. Wei et al. <i>Circ. Res.</i>  Feb 2021.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J23]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J15_Sun et al. - 2021 - Cardiac ryanodine receptor calcium release deficiency syndrome.pdf" target="_blank"><u> Cardiac Ryanodine Receptor Calcium Release Deficiency Syndrome.</u> <br>B. Sun et al. <i>Sci. Transl. Med.</i>  Feb 2021.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J24]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J14_Civera-Tregon et al. - 2021 - Mitochondria and calcium defects correlate with axonal dysfunction in GDAP1-related Charcot-Marie-Tooth mouse model.pdf" target="_blank"><u> Mitochondria and calcium defects correlate with axonal dysfunction in GDAP1-related Charcot-Marie-Tooth mouse model.</u> <br>A. Civera-Tregón et al. <i>Neurobiol. Dis.</i>  Feb 2021.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J25]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J13_Vallmitjana et al. - 2020 - Blind Resolution of Lifetime Components in Individual Pixels of Fluorescence Lifetime Images Using the Phasor App.pdf" target="_blank"><u> Blind resolution of lifetime components in individual pixels of fluorescence lifetime images using the phasor approach.</u> <br><b>A. Vallmitjana</b> et al. <i>J. Phys. Chem. B</i>  Nov 2020.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J26]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J12_Vallmitjana et al. - 2020 - Resolution of 4 components in the same pixel in FLIM images using the phasor approach.pdf" target="_blank"><u> Resolution of 4 components in the same pixel in FLIM images using the phasor approach.</u> <br><b>A. Vallmitjana</b> et al. <i>Methods Appl. Fluoresc.</i>  Apr 2020.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J27]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/P21_Coskun et al. - 2020 - Nano-resolution in vivo 3D orbital tracking system to study cellular dynamics and bio-molecular processes.pdf" target="_blank"><u> Nano-resolution in vivo 3D orbital tracking system to study cellular dynamics and bio-molecular processes.</u> <br>U.C. Coskun et al. <i>SPIE BiOS</i>  Jan 2020.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J28]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J11_Herraiz-Martinez et al. - 2019 - The 4q25 variant rs13143308T links risk of atrial fibrillation to defective calcium homoeostasis.pdf" target="_blank"><u> The 4q25 variant rs13143308T links risk of atrial fibrillation to defective calcium homoeostasis.</u> <br>A. Herraiz-Martínez et al. <i>Cardiovasc. Res.</i>  Mar 2019.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J29]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J10_Sun et al. - 2018 - The cardiac ryanodine receptor, but not sarcoplasmic.pdf" target="_blank"><u> The cardiac ryanodine receptor, but not sarcoplasmic reticulum Ca2+-ATPase, is a major determinant of Ca2+ alternans in intact mouse hearts.</u> <br>B. Sun et al. <i>J. Biol. Chem.</i>  Aug 2018.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J30]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J9_Hiess et al. - 2018 - Dynamic and Irregular Distribution of RyR2 Clusters in the Periphery of Live Ventricular Myocytes.pdf" target="_blank"><u> Dynamic and Irregular Distribution of Cardiac Ryanodine Receptor Clusters in the Periphery of Live Ventricular Myocytes.</u> <br>F. Hiess et al. <i>Biophys. J.</i>  Jan 2018.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J31]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J8_Zhong et al. - 2018 - Reduced expression of cardiac ryanodine receptor.pdf" target="_blank"><u> Reduced Expression of Cardiac Ryanodine Receptor Protects against Stress-induced Ventricular Tachyarrhythmia, but Increases the Susceptibility to Cardiac Alternans.</u> <br>X. Zhong et al. <i>Biochem. J.</i>  Jan 2018.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J32]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/C8_Vallmitjana et al. - 2017 - Motion estimation of subcellular structures from fluorescence microscopy images.pdf" target="_blank"><u> Motion estimation of subcellular structures from fluorescence microscopy images.</u> <br><b>A. Vallmitjana</b> et al. <i>Annu Int Conf IEEE Eng Med Biol Soc.</i>  Jul 2017.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J33]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J7_Zhong et al. - 2016 - Suppression of Ryanodine Receptor Function Prolongs Ca2 Release Refractoriness and Promotes Cardiac Alternans in I.pdf" target="_blank"><u> Suppression of Ryanodine Receptor Function Prolongs Ca2+ Release Refractoriness and Promotes Cardiac Alternans in Intact Hearts.</u> <br>X. Zhong et al. <i>Biochem. J.</i>  Nov 2016.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J34]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J6_Rivera-torres et al. - 2016 - Cardiac repolarization anomalies linked to nuclear lamina alterations in Hutchinson- Gilford progeria.pdf" target="_blank"><u> Cardiac electrical defects in progeroid mice and Hutchinson-Gilford progeria syndrome patients with nuclear lamina alterations.</u> <br>J. Rivera-Torres et al. <i>Proc. Natl. Acad. Sci. U.S.A.</i>  Oct 2016.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J35]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J5_Molina et al - 2015 - Prevention of adenosine A2A receptor activation diminishes.pdf" target="_blank"><u> Prevention of adenosine A<sub>2A</sub> receptor activation diminishes beat-to-beat alternation in human atrial myocytes.</u> <br>C.E. Molina et al. <i>Basic Res. Cardiol.</i>  Jan 2016.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J36]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J4_Hiess et al. - 2015 - Distribution and function of cardiac ryanodine receptor clusters in live ventricular myocytes.pdf" target="_blank"><u> Distribution and Function of Cardiac Ryanodine Receptor Clusters in Live Ventricular Myocytes.</u> <br>F. Hiess et al. <i>J. Biol. Chem.</i>  Aug 2015.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J37]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J3_Herraiz-Martinez et al. - 2015 - Ageing is associated with deterioration of calcium homeostasis in isolated human right atrial myocytes.pdf" target="_blank"><u> Ageing is associated with deterioration of calcium homeostasis in isolated human right atrialmyocytes.</u> <br>A. Herraiz-Martínez et al. <i>Cardiovasc. Res.</i>  Apr 2015.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J38]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J2_Bai et al. - 2013 - Phospholamban Knockout Breaks Arrhythmogenic Ca2+ Waves.pdf" target="_blank"><u> Phospholamban knockout breaks arrhythmogenic Ca<sup>2+</sup> waves and suppresses catecholaminergic polymorphic ventricular tachycardia in mice.</u> <br>Y. Bai et al. <i>Circ. Res.</i>  Aug 2013.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J39]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/C4_Vallmitjana et al. - 2013 - Multilevel analysis of calcium dynamics in stimulated cultures of cardiomyocytes(2).pdf" target="_blank"><u> Multilevel analysis of calcium dynamics in stimulated cultures of cardiomyocytes.</u> <br><b>A. Vallmitjana</b> et al. <i>Annu Int Conf IEEE Eng Med Biol Soc.</i>  Jul 2013.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J40]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/J1_Barriga et al. - 2013 - Low density lipoproteins promote unstable calcium handling linked to reduced SERCA2 and connexin 40 expression.pdf" target="_blank"><u> Low Density Lipoproteins Promote Unstable Calcium Handling Accompanied by Reduced SERCA2 and Connexin-40 Expression in Cardiomyocytes.</u> <br>M. Barriga et al. <i>PLoS One</i>  Mar 2013.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[J41]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="./papers/C1_Vallmitjana et al. - 2010 - Identification of intracellular calcium dynamics in stimulated cardiomyocytes(2).pdf" target="_blank"><u> Identification of intracellular calcium dynamics in stimulated cardiomyocytes.</u> <br><b>A. Vallmitjana</b> et al. <i>Annu Int Conf IEEE Eng Med Biol Soc.</i>  Sep 2010.</a></td>
+                     </tr>
+                   </table>
+                 <h2 id="Pt">Patents</h2>
+                   <table>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[P1]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="https://patents.google.com/patent/US20230034263A1/en?inventor=alexander+vallmitjana" target="_blank"><u> Compositions and methods for spatial profiling of biological materials using time-resolved luminescence measurements.</u> <br>T.M. Vu, <b>A. Vallmitjana</b>, J. Gu, J. Zimak, P.N. Hedde, L. Scipioni, W. Zhao and E. Gratton. WO US CN | US20230034263A1. 2019.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[P2]</td>
+                       <td style="text-align:justify;" onclick="logset(1);"><a href="https://patents.google.com/patent/ES2532746B1/en?inventor=alexander+vallmitjana" target="_blank"><u> Computer-implemented method for dynamic characterization of cells in cell cultures and computer programs to carry out the method.</u> <br><b>A. Vallmitjana</b>, L. Hove-Madsen and R. Benítez. ES | ES2532746B1. 2013.</a></td>
+                     </tr>
+                   </table>
+                 <h2 id="CA">Conference Abstracts</h2>
+                   <table>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C1]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Identifying skin cell populations via their fluorescent signatures in label-free two-photon FLIM.</u> <br><b>A. Vallmitjana</b> et al.  <i>SPIE Photonics West BIOS</i>, San Francisco, CA, USA, Jan 2026.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C2]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Characterization of the immune microenvironment of skin cancer.</u> <br>B. Torrado et al.  <i>SPIE Photonics West BIOS</i>, San Francisco, CA, USA, Jan 2026.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C3]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Label-free two-photon FLIM for clinical dermatology.</u> <br><b>A. Vallmitjana</b> et al.  <i>1st Carpathian Biophotonics Meeting</i>, Sinaia, ROMANIA, Sep 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C4]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Fast large-area multiphoton exoscope for label-free in vivo imaging of immune cells in human skin.</u> <br>B. Torrado et al.  <i>69th Annual Meeting of the Biophysical-Society</i>, Los Angeles, CA, USA, Feb 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C5]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Long term in-vivo studies of human skin at cellular resolution.</u> <br><b>A. Vallmitjana</b> et al.  <i>SPIE Photonics West BIOS</i>, San Francisco, CA, USA, Jan 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C6]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Advancements in time-resolved detection for in-vivo multiphoton microscopy of human skin.</u> <br>M. Balu et al.  <i>SPIE Photonics West BIOS</i>, San Francisco, CA, USA, Jan 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C7]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Advancements in label-free optical metabolic in vivo imaging of human skin using multiphoton microscopy.</u> <br>B. Torrado et al.  <i>SPIE Photonics West BIOS</i>, San Francisco, CA, USA, Jan 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C8]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Standardizing multiphoton microscopy for clinical melanoma diagnosis: pilot study outcomes.</u> <br>S. Ranjit et al.  <i>SPIE Photonics West BIOS</i>, San Francisco, CA, USA, Jan 2025.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C9]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Longitudinal Analysis by MPM/RCM of Intradermal Deposition of Topical CaHA After Fractionated Ablation.</u> <br>W. Driscoll et al.  <i>American Society for Dermatologic Surgery Annual Meeting</i>, Orlando, FL, USA, Oct 2024.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C10]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Biophysical properties of the cilium that could contribute to regulate protein transport to the organelle.</u> <br>M. Cortabarría et al.  <i>6th European Cilia Meeting</i>, Dublin, IRELAND, Sep 2024.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C11]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Label-free multiphoton microscopy of immune cells in human skin.</u> <br><b>A. Vallmitjana</b> et al.  <i>Optica Biophotonics Congress</i>, Fort Lauderdale, Florida USA, Apr 2024.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C12]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Advancing optical metabolic imaging through phasor-based S-FLIM-SHG microscopy.</u> <br>B. Torrado et al.  <i>SPIE BiOS</i>, San Francisco, CA, USA, Jan 2024.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C13]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Multi-harmonic spectral phasor analysis of LAURDAN hyperspectral imaging enables the in vivo study of membrane dynamics of multiple membrane-bound organelles.</u> <br><b>A. Vallmitjana</b> et al.  <i>67th Annual Meeting of the Biophysical-Society</i>, San Diego, CA, USA, Feb 2023.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C14]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Simultaneous FLIM, harmonic generation and hyperspectral imaging using a 4-channel detector.</u> <br>B. Torrado et al.  <i>67th Annual Meeting of the Biophysical-Society</i>, San Diego, CA, USA, Feb 2023.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C15]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Integrated lifetime and spectral phasor imaging of biomarker expression and metabolism in hormone receptor positive breast cancer models.</u> <br>B. Torrado et al.  <i>AACR Annual Meeting 2022</i>, New Orleans, LA, USA, Apr 2022.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C16]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Spectral and lifetime multiplexing with combinatorial labeling.</u> <br><b>A. Vallmitjana</b> et al.  <i>66th Annual Meeting of the Biophysical Society</i>, San Francisco, CA, USA, Feb 2022.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C17]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Understanding water dynamics in different subcellular environments by combining multiplexing imaging and dimethylamino naphthalene fluorescent derivatives.</u> <br>B. Torrado et al.  <i>66th Annual Meeting of the Biophysical Society</i>, San Francisco, CA, USA, Feb 2022.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C18]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Automatic image segmentation based on phasor space clustering.</u> <br><b>A. Vallmitjana</b> et al.  <i>65th Annual Meeting of the Biophysical Society</i>, Virtual, Feb 2021.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C19]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Spatial profiling of mRNA transcripts with spectral and fluorescence lifetime imaging microscopy.</u> <br>J. Flores et al.  <i>65th Annual Meeting of the Biophysical Society</i>, Virtual, Feb 2021.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C20]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Pathological phosphorylation of the ryanodine receptor at s2808 increases the number of individual clusters activated per calcium spark and the calcium released per cluster.</u> <br>C. Nolla-Colomer et al.  <i>European Society of Cardiology Congress</i>, Virtual, Nov 2020.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C21]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Highly Multiplexed Molecular Profiling Platform Using Fluorescence Lifetime Imaging Microscopy (FLIM).</u> <br>H.V. Patel et al.  <i>Biomedical Engineering Society Annual Meeting</i>, San Diego, CA, USA, Oct 2020.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C22]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Aquaporin 0a is required for water homeostasis in the zebrafish lens in vivo.</u> <br>I. Vorontsova et al.  <i>64th Annual Meeting of the Biophysical-Society</i>, San Diego, CA, USA, Feb 2020.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C23]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Detection of Calcium release from individual RyR2 clusters in cardiomyocites.</u> <br>C. Nolla-Colomer et al.  <i>64th Annual Meeting of the Biophysical-Society</i>, San Diego, CA, USA, Feb 2020.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C24]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> A Nanocamera system for fast spectral FLIM in living cells.</u> <br>L. Scipioni et al.  <i>64th Annual Meeting of the Biophysical-Society</i>, San Diego, CA, USA, Feb 2020.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C25]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Solvatochromic properties of ACDAN and spectral phasor analysis reveal the role of Aquaporin 0a in regulating macromolecular crowding in the zebrafish lens in vivo.</u> <br>L. Malacrida et al.  <i>64th Annual Meeting of the Biophysical-Society</i>, San Diego, CA, USA, Feb 2020.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C26]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Measuring the spatial distribution of dipolar relaxation in live zebrafish eye lenses during development.</u> <br><b>A. Vallmitjana</b> et al.  <i>64th Annual Meeting of the Biophysical Society</i>, San Diego, CA, USA, Feb 2020.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C27]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Aquaporin 0a is required for water homeostasis in the zebrafish lens in vivo.</u> <br>I. Vorontsova et al.  <i>6th International Conference on the Lens 2019 (NFER)</i>, Hilo, HI, USA, Dec 2019.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C28]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Role of Aqp0 in water homeostasis and macromolecular crowding modulation on in vivo zebrafish lens.</u> <br>I. Vorontsova et al.  <i>II Congreso Nacional Sociedad Uruguaya de Biociencias</i>, Montevideo, URUGUAY, Sep 2019.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C29]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> 3D orbital tracking under STED microscopy.</u> <br><b>A. Vallmitjana</b> and E. Gratton.  <i>63rd Annual Meeting of the Biophysical Society</i>, Baltimore, MD, USA, Mar 2019.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C30]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Inhibition of PDE3 but not PDE4 phosphodiesterases stimulate ryanodine receptor phosphorylation at Ser2808.</u> <br>V. Jiménez-Sábado et al.  <i>Congress of the European Society of Cardiology</i>, Munich, GERMANY, Aug 2018.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C31]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Characterization of Mitochondrial Transport Using Probabilistic Feature-Based Tracking.</u> <br>C. Serrano et al.  <i>40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</i>, Honolulu, HI, USA, Jul 2018.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C32]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Excessive activation of beta-2 adrenergic receptors induces arrhythmic calcium oscillations and ryanodine receptor phosphorylation at ser2809 but not at ser2815.</u> <br>V. Jiménez-Sábado et al.  <i>Congress of the European Society of Cardiology</i>, Barcelona, SPAIN, Aug 2017.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C33]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Automatic segmentation of z-lines in cardiac cells from microscope fluorescence images.</u> <br>C. Nolla-Colomer et al.  <i>39th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</i>, Jeju, KOREA, Jul 2017.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C34]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Detection and characterization of spontaneous calcium release events in cardiac myocytes.</u> <br><b>A. Vallmitjana</b> et al.  <i>Single-Cell Biophysics Congress on Measurement, Modulation and Modeling, Biophysical Society</i>, Taipei, TAIWAN, Jun 2017.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C35]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Effects of atrial fibrillation on the distribution and phosphorylation of ryanodine receptor clusters at the sites ser2808 and ser2814 in human atrial myocytes.</u> <br>V. Jiménez-Sábado et al.  <i>Copenhagen Meeting on Cardiac Arrhythmia</i>, Copenhagen, DENMARK, Jun 2017.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C36]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Atrial specific pitx2 insufficiency increases the frequency of calcium sparks, waves and after-depolarisations in mouse atrial myocytes.</u> <br>C. Tarifa et al.  <i>61st Annual Meeting of the Biophysical Society</i>, New Orleans, LA, USA, Feb 2017.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C37]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> A New User-Friendly Tool for Localizing Spots in Fluorescence Microscopy Images.</u> <br>X. Marimon et al.  <i>37th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</i>, Milan, ITALY, Aug 2015.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C38]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Spatial localization of ryanodine receptors in human cardiac cells.</u> <br><b>A. Vallmitjana</b> et al.  <i>37th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</i>, Milan, ITALY, Aug 2015.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C39]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Multiscale Detection of Intracellular Protein Structures from Microscope Fluorescence Images.</u> <br><b>A. Vallmitjana</b> et al.  <i>IEEE International Symposium on Biomedical Imaging (ISBI)</i>, New York, NY, USA, Apr 2015.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C40]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Simultaneous Detection and Colocalization of Calcium Sparks and Ryanodine Receptor Clusters in Cardiac Myocytes.</u> <br><b>A. Vallmitjana</b> et al.  <i>59th Annual Meeting of the Biophysical Society</i>, Baltimore, MD, USA, Jan 2015.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C41]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> A higher frequency and proximity of calcium sparks to the cell membrane may potentiate arrhythmogenic afterdepolarizations in atrial myocytes from patients with atrial fibrillation.</u> <br>C. Tarifa et al.  <i>Congress of the European Society of Cardiology</i>, Barcelona, SPAIN, Sep 2014.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C42]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Detection, quantification and visualization of ryanodine receptor phosphorylation in human atrial myocytes using a novel ratiometric immunofluorescent analysis.</u> <br><b>A. Vallmitjana</b> et al.  <i>3rd Congress of the ESC-Council-on-Basic-Cardiovascular-Science on Frontiers in Cardiovascular Biology</i>, Barcelona, SPAIN, Jul 2014.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C43]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Superresolution Imaging of RYR2 Clusters in GFP RYR2 Knock in Mouse Cardiomyocytes.</u> <br>F. Hiess et al.  <i>58th Annual Meeting of the Biophysical Society</i>, San Francisco, CA, USA, Jan 2014.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C44]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Abnormal calcium handling in the progeric mouse model Zmpste24-/- is linked to reduced sarcoplasmic reticulum calcium loading and depression of SERCA2 and calsequestrin-2 expression.</u> <br>A. Llach et al.  <i>Congress of the European Society of Cardiology</i>, Amsterdam, NETHERLANDS, Aug 2013.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C45]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> A Method to Characterize Calcium Activity in Stimulated Cultures of Cardiac Myocytes.</u> <br>R. Benítez et al.  <i>57th Annual Meeting of the Biophysical Society</i>, Philadelphia, PA, USA, Jan 2013.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C46]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Disrupting Ca<sup>2+</sup> waves, but not Ca2+ leak, protects against cardiac arrhythmia.</u> <br>P.P. Jones et al.  <i>60th Annual scientific meeting of the Cardiac Society of Australia and New Zealand (CSANZ)</i>, Brisbane, QLD, AUSTRALIA, Aug 2012.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C47]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Automatic method for the detection and characterization of calcium activity in cardiac cells.</u> <br><b>A. Vallmitjana</b> et al.  <i>IEEE International Symposium on Biomedical Imaging (ISBI)</i>, Barcelona, SPAIN, May 2012.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C48]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Adenosine A<sub>2A</sub> receptor activation decreases beat-to-beat stability of intracellular calcium transients and their propagation in atrial myocytes.</u> <br>M. Barriga et al.  <i>56th Annual Meeting of the Biophysical Society</i>, San Diego, CA, USA, Feb 2012.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C49]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Detection and classification of spontaneous calcium release events in cardiac myocytes.</u> <br>R. Benítez et al.  <i>56th Annual Meeting of the Biophysical Society</i>, San Diego, CA, USA, Feb 2012.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C50]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Effects of atrial fibrillation on the distribution, dimensions, and frequency of calcium sparks in human atrial myocytes.</u> <br>M. Barriga et al.  <i>European Society of Cardiology Congress</i>, Paris, FRANCE, Aug 2011.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C51]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Efecto del potencial de membrana sobre las dimensiones, la cinetica y la frecuencia de la liberacion local de calcio en miocitos auriculares humanos.</u> <br>M. Barriga et al.  <i>Congreso de la Sociedad Española de Cardiología</i>, Valencia, SPAIN, Oct 2010.</a></td>
+                     </tr>
+                     <tr>
+                       <td style="padding-left:0;padding-right:0;">[C52]</td>
+                       <td style="text-align:justify;cursor: default;" onclick="logset(1);"><a><u> Effect of the resting membrane potential on the distribution, dimensions, and frequency of calcium sparks in human atrial myocytes.</u> <br>M. Barriga et al.  <i>Congress of the European Society of Cardiology</i>, Stockholm, SWEDEN, Sep 2010.</a></td>
+                     </tr>
+                   </table>
+                </div>
+               <div style="height:4em"></div>
+               <div style="position: relative;">
+               <img src="imsCV/colab.png?2785" usemap="#colabmap" width="100%">
+               <div class="tooltip" style="left: 32%; top: 39%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">F.F. Messele</div></div>
+               <div class="tooltip" style="left: 91%; top: 31%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">H.V. Patel</div></div>
+               <div class="tooltip" style="left: 93%; top: 27%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M.K. Rahim</div></div>
+               <div class="tooltip" style="left: 78%; top: 22%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">F. Palomba</div></div>
+               <div class="tooltip" style="left: 78%; top: 27%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">A. Rossetta</div></div>
+               <div class="tooltip" style="left: 91%; top: 80%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">P. E. Molina</div></div>
+               <div class="tooltip" style="left: 47%; top: 36%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M. Cortabarría</div></div>
+               <div class="tooltip" style="left: 42%; top: 39%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J. Reiter</div></div>
+               <div class="tooltip" style="left: 50%; top: 33%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J. Badano</div></div>
+               <div class="tooltip" style="left: 14%; top: 52%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A. Olukoya</div></div>
+               <div class="tooltip" style="left: 13%; top: 48%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">S. Bahnassy</div></div>
+               <div class="tooltip" style="left: 20%; top: 50%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">H. Stires</div></div>
+               <div class="tooltip" style="left: 10%; top: 49%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A. Rozeboom</div></div>
+               <div class="tooltip" style="left: 17%; top: 50%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">R.B. Riggins</div></div>
+               <div class="tooltip" style="left: 70%; top: 63%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">P. Izquierdo</div></div>
+               <div class="tooltip" style="left: 67%; top: 68%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">S. Casellas</div></div>
+               <div class="tooltip" style="left: 69%; top: 66%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">E. Rodriguez-Font</div></div>
+               <div class="tooltip" style="left: 66%; top: 61%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">G. Chun</div></div>
+               <div class="tooltip" style="left: 63%; top: 62%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">H. Sheng</div></div>
+               <div class="tooltip" style="left: 63%; top: 65%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">G. Tibbits</div></div>
+               <div class="tooltip" style="left: 90%; top: 90%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">X. Marimon</div></div>
+               <div class="tooltip" style="left: 79%; top: 91%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">D.R.L. Scriven</div></div>
+               <div class="tooltip" style="left: 77%; top: 93%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">E.D.W. Moore</div></div>
+               <div class="tooltip" style="left: 88%; top: 77%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">B. Ballester</div></div>
+               <div class="tooltip" style="left: 36%; top: 31%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">K.K. Kelly</div></div>
+               <div class="tooltip" style="left: 40%; top: 28%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">N. Wakida</div></div>
+               <div class="tooltip" style="left: 37%; top: 26%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">K. Hinchee-Rodriguez</div></div>
+               <div class="tooltip" style="left: 43%; top: 15%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">Y. Nakazawa</div></div>
+               <div class="tooltip" style="left: 72%; top: 68%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">H. Colino-Lage</div></div>
+               <div class="tooltip" style="left: 87%; top: 30%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J.B. Haun</div></div>
+               <div class="tooltip" style="left: 10%; top: 35%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">I. Georgakoudi</div></div>
+               <div class="tooltip" style="left: 11%; top: 36%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M.C. Skala</div></div>
+               <div class="tooltip" style="left: 16%; top: 30%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">K.P. Quinn</div></div>
+               <div class="tooltip" style="left: 17%; top: 36%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">C. Stringari</div></div>
+               <div class="tooltip" style="left: 18%; top: 39%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J.E. Sorrells</div></div>
+               <div class="tooltip" style="left: 16%; top: 32%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A.A. Heikal</div></div>
+               <div class="tooltip" style="left: 18%; top: 34%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">L.Z. Li</div></div>
+               <div class="tooltip" style="left: 13%; top: 28%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">H.N. Xu</div></div>
+               <div class="tooltip" style="left: 19%; top: 36%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">S. You</div></div>
+               <div class="tooltip" style="left: 13%; top: 37%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A.J. Walsh</div></div>
+               <div class="tooltip" style="left: 11%; top: 29%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">R. Datta</div></div>
+               <div class="tooltip" style="left: 13%; top: 33%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">K. Samimi</div></div>
+               <div class="tooltip" style="left: 15%; top: 28%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A.A. Gillette</div></div>
+               <div class="tooltip" style="left: 16%; top: 26%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">K.W. Eliceiri</div></div>
+               <div class="tooltip" style="left: 22%; top: 34%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">S.A. Boppart</div></div>
+               <div class="tooltip" style="left: 21%; top: 31%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">K.R. Dunning</div></div>
+               <div class="tooltip" style="left: 15%; top: 37%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">C.L. Evans</div></div>
+               <div class="tooltip" style="left: 13%; top: 35%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A.A. García</div></div>
+               <div class="tooltip" style="left: 11%; top: 33%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J.P. Houston</div></div>
+               <div class="tooltip" style="left: 16%; top: 39%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">W. Hwang</div></div>
+               <div class="tooltip" style="left: 18%; top: 28%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M.M. Lindley</div></div>
+               <div class="tooltip" style="left: 13%; top: 27%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">X. Li</div></div>
+               <div class="tooltip" style="left: 18%; top: 27%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">Z. Liu</div></div>
+               <div class="tooltip" style="left: 19%; top: 31%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">L. Marcu</div></div>
+               <div class="tooltip" style="left: 9%; top: 32%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">S. Murugkar</div></div>
+               <div class="tooltip" style="left: 14%; top: 31%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M.G. Nichols</div></div>
+               <div class="tooltip" style="left: 20%; top: 33%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">R.A. Niesner</div></div>
+               <div class="tooltip" style="left: 11%; top: 31%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">S.H. Parekh</div></div>
+               <div class="tooltip" style="left: 15%; top: 34%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">N. Rajaram</div></div>
+               <div class="tooltip" style="left: 21%; top: 36%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">K. Shen</div></div>
+               <div class="tooltip" style="left: 20%; top: 38%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">L. Shi</div></div>
+               <div class="tooltip" style="left: 20%; top: 29%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M. Wang-Evers</div></div>
+               <div class="tooltip" style="left: 48%; top: 92%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">H.L. Zhu</div></div>
+               <div class="tooltip" style="left: 46%; top: 91%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">S. Cai</div></div>
+               <div class="tooltip" style="left: 48%; top: 90%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">S. Tian</div></div>
+               <div class="tooltip" style="left: 43%; top: 88%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M.T. Søndergaard</div></div>
+               <div class="tooltip" style="left: 52%; top: 89%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M. Brohus</div></div>
+               <div class="tooltip" style="left: 54%; top: 91%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">P.D. Rohde</div></div>
+               <div class="tooltip" style="left: 50%; top: 90%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">Y. Mu</div></div>
+               <div class="tooltip" style="left: 50%; top: 93%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M.T. Overgaard</div></div>
+               <div class="tooltip" style="left: 46%; top: 88%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">G.I. Fishman</div></div>
+               <div class="tooltip" style="left: 44%; top: 90%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J. Ramos-Franco</div></div>
+               <div class="tooltip" style="left: 52%; top: 92%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M. Nyegaard</div></div>
+               <div class="tooltip" style="left: 5%; top: 68%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">F. Rammauro</div></div>
+               <div class="tooltip" style="left: 6%; top: 74%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M. Flo</div></div>
+               <div class="tooltip" style="left: 9%; top: 68%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">F. Carrion</div></div>
+               <div class="tooltip" style="left: 2%; top: 65%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">C. Ortega</div></div>
+               <div class="tooltip" style="left: 6%; top: 64%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">F. Di Nunzio</div></div>
+               <div class="tooltip" style="left: 9%; top: 72%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">O. Pritsch</div></div>
+               <div class="tooltip" style="left: 52%; top: 12%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">S. Zhu</div></div>
+               <div class="tooltip" style="left: 56%; top: 79%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">W. Feng</div></div>
+               <div class="tooltip" style="left: 41%; top: 83%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A. Lehman</div></div>
+               <div class="tooltip" style="left: 84%; top: 74%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">H. Godoy-Marín</div></div>
+               <div class="tooltip" style="left: 84%; top: 71%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">A. Ginel</div></div>
+               <div class="tooltip" style="left: 81%; top: 76%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">X. Vinolas</div></div>
+               <div class="tooltip" style="left: 79%; top: 70%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">F. Ciruela</div></div>
+               <div class="tooltip" style="left: 85%; top: 23%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M.A. Morris</div></div>
+               <div class="tooltip" style="left: 91%; top: 21%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">F. Grein</div></div>
+               <div class="tooltip" style="left: 83%; top: 20%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">T. Schneider</div></div>
+               <div class="tooltip" style="left: 87%; top: 20%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M. Arts</div></div>
+               <div class="tooltip" style="left: 87%; top: 16%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">C.R. Jones</div></div>
+               <div class="tooltip" style="left: 82%; top: 16%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">B.T. Nguyen</div></div>
+               <div class="tooltip" style="left: 90%; top: 18%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M.H. Hashemian</div></div>
+               <div class="tooltip" style="left: 84%; top: 14%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M. Malek</div></div>
+               <div class="tooltip" style="left: 69%; top: 17%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">Q. Xu</div></div>
+               <div class="tooltip" style="left: 65%; top: 27%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">L. Hosohama</div></div>
+               <div class="tooltip" style="left: 70%; top: 23%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Wu</div></div>
+               <div class="tooltip" style="left: 67%; top: 22%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">C. Douglas</div></div>
+               <div class="tooltip" style="left: 68%; top: 27%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M. Waterman</div></div>
+               <div class="tooltip" style="left: 83%; top: 77%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M. Tauron</div></div>
+               <div class="tooltip" style="left: 52%; top: 72%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">L. Zhang</div></div>
+               <div class="tooltip" style="left: 54%; top: 74%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">K.V.V. Lieve</div></div>
+               <div class="tooltip" style="left: 45%; top: 73%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A.K. Broendberg</div></div>
+               <div class="tooltip" style="left: 54%; top: 76%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">I. Blankoff</div></div>
+               <div class="tooltip" style="left: 43%; top: 75%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J.A. Kammeraad</div></div>
+               <div class="tooltip" style="left: 49%; top: 74%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J.C. von Alvensleben</div></div>
+               <div class="tooltip" style="left: 43%; top: 77%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J. Lazarte</div></div>
+               <div class="tooltip" style="left: 47%; top: 72%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">L.J. Bohne</div></div>
+               <div class="tooltip" style="left: 49%; top: 76%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">R.A. Rose</div></div>
+               <div class="tooltip" style="left: 49%; top: 72%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">C. Napolitano</div></div>
+               <div class="tooltip" style="left: 51%; top: 74%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">R.A. Hegele</div></div>
+               <div class="tooltip" style="left: 46%; top: 75%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J.D. Roberts</div></div>
+               <div class="tooltip" style="left: 43%; top: 79%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">S.G. Priori</div></div>
+               <div class="tooltip" style="left: 45%; top: 77%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">H.K. Jensen</div></div>
+               <div class="tooltip" style="left: 29%; top: 72%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">L. Domínguez</div></div>
+               <div class="tooltip" style="left: 25%; top: 78%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">P. Martínez-Valero</div></div>
+               <div class="tooltip" style="left: 25%; top: 74%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J. Satrústegui</div></div>
+               <div class="tooltip" style="left: 43%; top: 20%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">D.M. Jameson</div></div>
+               <div class="tooltip" style="left: 73%; top: 57%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Gandía</div></div>
+               <div class="tooltip" style="left: 78%; top: 57%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">E. Lozano-Velasco</div></div>
+               <div class="tooltip" style="left: 74%; top: 54%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">E. Vázquez Ruiz de Castroviejo</div></div>
+               <div class="tooltip" style="left: 77%; top: 55%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">A. Aranega</div></div>
+               <div class="tooltip" style="left: 83%; top: 84%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">P. Detampel</div></div>
+               <div class="tooltip" style="left: 81%; top: 86%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">A. Ganguly</div></div>
+               <div class="tooltip" style="left: 84%; top: 87%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M. Amrein</div></div>
+               <div class="tooltip" style="left: 60%; top: 91%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">Z. Xiao</div></div>
+               <div class="tooltip" style="left: 58%; top: 94%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">Y. Chen</div></div>
+               <div class="tooltip" style="left: 62%; top: 89%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">E.R. OBrien</div></div>
+               <div class="tooltip" style="left: 56%; top: 95%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M. Hoshijima</div></div>
+               <div class="tooltip" style="left: 60%; top: 95%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">H. Takeshima</div></div>
+               <div class="tooltip" style="left: 83%; top: 54%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">G. Guzmán-Martínez</div></div>
+               <div class="tooltip" style="left: 85%; top: 53%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">C. Calvo</div></div>
+               <div class="tooltip" style="left: 88%; top: 60%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">R. Caballero</div></div>
+               <div class="tooltip" style="left: 84%; top: 57%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">L.J. Jiménez-Borreguero</div></div>
+               <div class="tooltip" style="left: 89%; top: 54%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. A. Guadix</div></div>
+               <div class="tooltip" style="left: 95%; top: 59%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">F.G. Osorio</div></div>
+               <div class="tooltip" style="left: 90%; top: 56%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">C. Lopez-Otin</div></div>
+               <div class="tooltip" style="left: 91%; top: 58%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">L. B. Gordon</div></div>
+               <div class="tooltip" style="left: 94%; top: 56%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Jalife</div></div>
+               <div class="tooltip" style="left: 91%; top: 61%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. M. Pérez-Pomares</div></div>
+               <div class="tooltip" style="left: 87%; top: 52%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Tamargo</div></div>
+               <div class="tooltip" style="left: 91%; top: 53%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">E. Delpon</div></div>
+               <div class="tooltip" style="left: 92%; top: 55%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">D. Filgueiras-Rama</div></div>
+               <div class="tooltip" style="left: 89%; top: 68%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">R. F. Wiegerinck</div></div>
+               <div class="tooltip" style="left: 71%; top: 95%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">H. Cheng</div></div>
+               <div class="tooltip" style="left: 93%; top: 75%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Alvarez-Garcia</div></div>
+               <div class="tooltip" style="left: 94%; top: 66%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">A. Ferrero-Gregori</div></div>
+               <div class="tooltip" style="left: 97%; top: 66%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">C. Rodríguez</div></div>
+               <div class="tooltip" style="left: 95%; top: 70%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Martínez-González</div></div>
+               <div class="tooltip" style="left: 70%; top: 90%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Guo</div></div>
+               <div class="tooltip" style="left: 67%; top: 95%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">L. Semeniuk</div></div>
+               <div class="tooltip" style="left: 95%; top: 77%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">R. Cal</div></div>
+               <div class="tooltip" style="left: 97%; top: 74%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">L. Badimon</div></div>
+               <div class="tooltip" style="left: 98%; top: 70%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">V. Llorente-Cortes</div></div>
+               <div class="tooltip" style="left: 88%; top: 82%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">Z. Nenadic</div></div>
+               <div class="tooltip" style="left: 75%; top: 9%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">U.C. Coskun</div></div>
+               <div class="tooltip" style="left: 62%; top: 6%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M.L. Ferguson</div></div>
+               <div class="tooltip" style="left: 68%; top: 10%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">A. Hyunh</div></div>
+               <div class="tooltip" style="left: 72%; top: 10%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Goelzer</div></div>
+               <div class="tooltip" style="left: 66%; top: 5%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">Y. Sun</div></div>
+               <div class="tooltip" style="left: 72%; top: 6%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">S. Liao</div></div>
+               <div class="tooltip" style="left: 64%; top: 8%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">S. Shah</div></div>
+               <div class="tooltip" style="left: 30%; top: 18%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">P. Chang</div></div>
+               <div class="tooltip" style="left: 27%; top: 12%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">W. Driscoll</div></div>
+               <div class="tooltip" style="left: 30%; top: 10%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">N.M. Golbari</div></div>
+               <div class="tooltip" style="left: 36%; top: 13%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A.F. Durkin</div></div>
+               <div class="tooltip" style="left: 78%; top: 76%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M. Marchena</div></div>
+               <div class="tooltip" style="left: 70%; top: 25%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">K. La</div></div>
+               <div class="tooltip" style="left: 75%; top: 70%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">S. Casabella-Ramon</div></div>
+               <div class="tooltip" style="left: 27%; top: 80%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">C. Serrano</div></div>
+               <div class="tooltip" style="left: 75%; top: 59%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">S. A. Serra</div></div>
+               <div class="tooltip" style="left: 70%; top: 57%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">D. Franco</div></div>
+               <div class="tooltip" style="left: 87%; top: 56%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Rivera-Torres</div></div>
+               <div class="tooltip" style="left: 94%; top: 60%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">C. González-Gómez</div></div>
+               <div class="tooltip" style="left: 94%; top: 72%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J.M. Padró</div></div>
+               <div class="tooltip" style="left: 69%; top: 93%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">Y. Bai</div></div>
+               <div class="tooltip" style="left: 72%; top: 92%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">R.B. Clark</div></div>
+               <div class="tooltip" style="left: 71%; top: 86%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">Q. Zhou</div></div>
+               <div class="tooltip" style="left: 34%; top: 18%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M. Far-Hadian</div></div>
+               <div class="tooltip" style="left: 36%; top: 22%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">N. Rajil</div></div>
+               <div class="tooltip" style="left: 46%; top: 32%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">P. Lepanto</div></div>
+               <div class="tooltip" style="left: 71%; top: 20%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Flores</div></div>
+               <div class="tooltip" style="left: 79%; top: 63%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">C.E. Muñoz-Guijosa</div></div>
+               <div class="tooltip" style="left: 42%; top: 35%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">F. Irigoín</div></div>
+               <div class="tooltip" style="left: 74%; top: 90%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">P.P. Jones</div></div>
+               <div class="tooltip" style="left: 46%; top: 14%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">T.F. Schilling</div></div>
+               <div class="tooltip" style="left: 47%; top: 17%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J.E. Hall</div></div>
+               <div class="tooltip" style="left: 65%; top: 24%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Zimak</div></div>
+               <div class="tooltip" style="left: 42%; top: 12%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">I. Vorontsova</div></div>
+               <div class="tooltip" style="left: 46%; top: 86%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">Y. Li</div></div>
+               <div class="tooltip" style="left: 49%; top: 87%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">Z. Song</div></div>
+               <div class="tooltip" style="left: 43%; top: 86%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">H. Wang</div></div>
+               <div class="tooltip" style="left: 45%; top: 82%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A.A.M. Wilde</div></div>
+               <div class="tooltip" style="left: 47%; top: 82%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M. Fill</div></div>
+               <div class="tooltip" style="left: 50%; top: 9%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">S. Jazani</div></div>
+               <div class="tooltip" style="left: 51%; top: 78%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">T.M. Roston</div></div>
+               <div class="tooltip" style="left: 75%; top: 85%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">H.E.D.J. ter Keurs</div></div>
+               <div class="tooltip" style="left: 62%; top: 93%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">A.M. Gillis</div></div>
+               <div class="tooltip" style="left: 66%; top: 91%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">A. Guo</div></div>
+               <div class="tooltip" style="left: 66%; top: 87%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">H.J. Duff</div></div>
+               <div class="tooltip" style="left: 68%; top: 88%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">L.S. Song</div></div>
+               <div class="tooltip" style="left: 92%; top: 68%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Fernandes</div></div>
+               <div class="tooltip" style="left: 64%; top: 17%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">P.N. Hedde</div></div>
+               <div class="tooltip" style="left: 67%; top: 74%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">B. Echebarria</div></div>
+               <div class="tooltip" style="left: 26%; top: 71%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A. Civera-Tregón</div></div>
+               <div class="tooltip" style="left: 29%; top: 68%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J. Hoenicka</div></div>
+               <div class="tooltip" style="left: 62%; top: 25%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">T.M. Vu</div></div>
+               <div class="tooltip" style="left: 66%; top: 19%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Gu</div></div>
+               <div class="tooltip" style="left: 76%; top: 87%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">F. Hiess</div></div>
+               <div class="tooltip" style="left: 90%; top: 71%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">C.E. Molina</div></div>
+               <div class="tooltip" style="left: 51%; top: 22%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Shiu</div></div>
+               <div class="tooltip" style="left: 70%; top: 79%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">E. Alvarez-Lacalle</div></div>
+               <div class="tooltip" style="left: 13%; top: 39%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">R.J. Zemp</div></div>
+               <div class="tooltip" style="left: 3%; top: 70%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">N. Olivero</div></div>
+               <div class="tooltip" style="left: 89%; top: 24%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J.S. Nowick</div></div>
+               <div class="tooltip" style="left: 68%; top: 7%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">B. Barbieri</div></div>
+               <div class="tooltip" style="left: 56%; top: 88%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Chen</div></div>
+               <div class="tooltip" style="left: 47%; top: 83%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">S. Sanatani</div></div>
+               <div class="tooltip" style="left: 47%; top: 9%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M. Fazel</div></div>
+               <div class="tooltip" style="left: 48%; top: 79%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">Y.X. Chen</div></div>
+               <div class="tooltip" style="left: 86%; top: 59%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">V. Andres</div></div>
+               <div class="tooltip" style="left: 37%; top: 19%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">K.M. Kelly</div></div>
+               <div class="tooltip" style="left: 24%; top: 13%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">C.B. Zachary</div></div>
+               <div class="tooltip" style="left: 81%; top: 73%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Montiel</div></div>
+               <div class="tooltip" style="left: 74%; top: 65%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">V. Jiménez-Sábado</div></div>
+               <div class="tooltip" style="left: 89%; top: 64%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">N. Cabello</div></div>
+               <div class="tooltip" style="left: 50%; top: 84%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M. Ni</div></div>
+               <div class="tooltip" style="left: 54%; top: 86%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J.P. Estillore</div></div>
+               <div class="tooltip" style="left: 58%; top: 18%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">L. Scipioni</div></div>
+               <div class="tooltip" style="left: 28%; top: 76%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">F. Palau</div></div>
+               <div class="tooltip" style="left: 27%; top: 27%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M.A. Digman</div></div>
+               <div class="tooltip" style="left: 75%; top: 74%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">C. Nolla-Colomer</div></div>
+               <div class="tooltip" style="left: 62%; top: 22%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">W. Zhao</div></div>
+               <div class="tooltip" style="left: 88%; top: 73%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">M. Barriga</div></div>
+               <div class="tooltip" style="left: 50%; top: 23%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A.K. Ganesan</div></div>
+               <div class="tooltip" style="left: 52%; top: 81%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">D. Belke</div></div>
+               <div class="tooltip" style="left: 50%; top: 81%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">J. Yao</div></div>
+               <div class="tooltip" style="left: 77%; top: 66%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">C. Tarifa</div></div>
+               <div class="tooltip" style="left: 33%; top: 22%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A. Durkin</div></div>
+               <div class="tooltip" style="left: 55%; top: 83%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">B. Sun</div></div>
+               <div class="tooltip" style="left: 58%; top: 82%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">X. Zhong</div></div>
+               <div class="tooltip" style="left: 40%; top: 23%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">A. Dvornikov</div></div>
+               <div class="tooltip" style="left: 52%; top: 84%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Wei</div></div>
+               <div class="tooltip" style="left: 54%; top: 84%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">W. Guo</div></div>
+               <div class="tooltip" style="left: 26%; top: 32%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">S. Ranjit</div></div>
+               <div class="tooltip" style="left: 82%; top: 68%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">J. Cinca</div></div>
+               <div class="tooltip" style="left: 82%; top: 64%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">A. Herraiz-Martínez</div></div>
+               <div class="tooltip" style="left: 47%; top: 25%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">L. Malacrida</div></div>
+               <div class="tooltip" style="left: 51%; top: 15%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">S. Pressé</div></div>
+               <div class="tooltip" style="left: 84%; top: 66%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">A. Llach</div></div>
+               <div class="tooltip" style="left: 58%; top: 84%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">R. Wang</div></div>
+               <div class="tooltip" style="left: 29%; top: 31%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">B. Torrado</div></div>
+               <div class="tooltip" style="left: 25%; top: 27%;"><div class="tooltiptext" style="left:.5vw;transform: translate(0%, -100%);">M. Balu</div></div>
+               <div class="tooltip" style="left: 64%; top: 19%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">E. Gratton</div></div>
+               <div class="tooltip" style="left: 62%; top: 81%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">W. Chen</div></div>
+               <div class="tooltip" style="left: 69%; top: 75%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">L. Hove-Madsen</div></div>
+               <div class="tooltip" style="left: 67%; top: 75%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">R. Benítez</div></div>
+               <div class="tooltip" style="left: 54%; top: 53%;"><div class="tooltiptext" style="left:.5vw;transform: translate(-100%, -100%);">A. Vallmitjana</div></div>
+               </div>
+                <div style="text-align: center;"><p>Co-author connectivity graph.</p></div>
+             <div id="Contact">
+               <div>
+                 <h1>Contact</h1>
+                 <p>alex.vallmitjana@uci.edu<p>
+               </div>
+               <div style="width:100%;height:60vh;overflow:hidden;" >
+               <iframe style="width:100%;height:100%;bottom:0;margin-top:-68px;margin-left:-6px;" src="https://www.google.com/maps/d/embed?mid=1ReoznQCCCGmF58Wto7XFh-wSJCGDAs8&ehbc=2E312F"></iframe>
+               </div>
+             </div>
+       </div>
+         <footer class="footerbar">
+             <p style="padding:0;margin:0;">2026 Alex VL</p>
+         </footer>
+   </body>
+</html>
