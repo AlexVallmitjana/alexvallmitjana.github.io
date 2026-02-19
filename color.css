@@ -1,0 +1,20 @@
+:root,.theme1 {
+    --txcol: #545454;
+    --bgcol: #fff;
+    --txinv: #FFF;
+    --bginv: #113;
+    --bginvemph: #3700B3; /*not used in c*/
+    --txemph: #868686;
+    --tx2: #000;
+    --bg2: #e6e9e9;
+}
+.theme6 {
+    --txcol: #545454;
+    --bgcol: #f4e1d2;
+    --txinv: #f4e1d2;
+    --bginv: #50394c;
+    --bginvemph: #3700B3; /*not used in c*/
+    --txemph: #868686;
+    --tx2: #000;
+    --bg2: #e6e9e9;
+}

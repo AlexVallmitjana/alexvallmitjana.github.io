@@ -1,5 +1,5 @@
 html {
-    background: #e6e9e9;/* #B6B6AE*/
+    background: var(--bg2);
     font-family: "Helvetica Neue", Helvetica, Arial,sans-serif;
     font-size: .86em;
     line-height: 1.5;
@@ -21,7 +21,7 @@ a {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #113;
+    background-color: var(--bginv);
     z-index: 10;
     text-align:left;
     padding: 0;
@@ -32,7 +32,7 @@ a {
     display: block;
 }*/
 a:hover{
-    color:#868686;
+    color: var(--txemph);
 }
 h1, h2, h3{
     font-weight: 600;
@@ -43,8 +43,8 @@ h1, h2, h3{
     font-size: 1.1em;
     text-size-adjust: none;
     -webkit-text-size-adjust: none;
-    background: #113;
-    color: #FFF;
+    background: var(--bginv);
+    color: var(--txinv);
     position: fixed;    
     top: 0;left: 0;
     width: 100%;
@@ -66,8 +66,8 @@ h1, h2, h3{
 body {
 }
 #cos {
-    background: #fff;
-    color: #545454;
+    background: var(--bgcol);
+    color: var(--txcol);
     margin: 0px auto;
     padding: 2.5em 1.5em 1em 1.5em;  
     max-width: 686px;  
@@ -81,8 +81,8 @@ justify-content: space-between;
 }
 }
 .footerbar {
-    background: #e6e9e9;
-    color: #000;   
+    background: var(--bg2);
+    color: var(--tx2);  
     bottom: 0;left: 0;right: 0;
     width: 100%;
     text-align: center;     
@@ -104,7 +104,7 @@ ul {
 }
 .tasks{
 	padding-bottom:1em;
-    color:gray;
+    color: var(--txcol);
 }
 .ul2{
     padding-left: 2em;
@@ -119,9 +119,9 @@ td,th {
 	padding: 0em .2em 0em .2em;
 }
 .btn {
-  background-color: #114;
+  background-color: var(--bginv);
   border: none;
-  color: white;
+  color: var(--txinv);
     border-radius: 0.4em;
   padding: 6px 8px;
   cursor: pointer;
@@ -131,39 +131,38 @@ td,th {
     user-select: none;
 }
 .btn:hover {
-  background-color: #3700B3;
+  background-color: var(--bginvemph);
 }
 .grid3{
-    display:grid;
-    column-gap: 1.5em;
-    text-align:center;
-    grid-template-columns:auto auto auto;
+  display:grid;
+  column-gap: 1.5em;
+  text-align:center;
+  grid-template-columns:auto auto auto;
 }
 /* tooltip for colaboration map*/
 .tooltip {
   display: inline-block;
-    position: absolute; 
-    border-radius:50%;
-    width: 1.5vw; 
-    height: 1.5vw;
-    transform: translate(-50%, -50%); 
-    background-color: none;
+  position: absolute; 
+  border-radius:50%;
+  width: 1.5vw; 
+  height: 1.5vw;
+  transform: translate(-50%, -50%); 
+  background-color: none;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  background-color: #FFA;
-  color: #545454;
-    white-space: nowrap ;
-    font-size:.68rem;
-    border:1px solid black;
+  background-color: var(--bgcol);
+  color: var(--txcol);
+  white-space: nowrap ;
+  font-size:.68rem;
+  border:1px solid  var(--txcol);
   border-radius: 2px;
   padding: 0px 2px 0px 2px;  
   position: absolute;
-    top:1vw;
+  top:1vw;
   z-index: 1;
-    user-select: none;
-    
+  user-select: none;    
 }
 
 .tooltip:hover .tooltiptext {
