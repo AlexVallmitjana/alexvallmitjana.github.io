@@ -1,4 +1,4 @@
-:root,.theme1 {
+.theme1 {
     --txcol: #545454;
     --bgcol: #fff;
     --txinv: #FFF;
@@ -7,6 +7,16 @@
     --txemph: #868686;
     --tx2: #000;
     --bg2: #e6e9e9;
+}
+.theme2 {
+    --txcol: #ddd;
+    --bgcol: #444;
+    --txinv: #fff;
+    --bginv: #711;
+    --bginvemph: #c55; /*not used in c*/
+    --txemph: #fff;
+    --tx2: #fff;
+    --bg2: #222;
 }
 .theme6 {
     --txcol: #545454;
